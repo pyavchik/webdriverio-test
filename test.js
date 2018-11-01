@@ -11,7 +11,7 @@ webdriverio
     .url('https://trueautomation.io/')
     .click('.login-btn')
     .click('div.sign-up-container > a')
-    .waitForVisible('*[name="email"]', 7000)
+    .waitForVisible('*[name="email"]')
     .setValue('*[name="email"]', 'your@mail.com')
     .end()
     .catch(function(err) {
